@@ -33,7 +33,7 @@ function Finaltodo() {
           value={input}
           onChange={handleChange}
         />
-        <button>Submit</button>
+        <button style={{ marginLeft: "10px" }}>Submit</button>
       </form>
       <ul>
         {todo.map((itemval, ind) => {
