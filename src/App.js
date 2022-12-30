@@ -1,4 +1,6 @@
 import "./styles.css";
+import Parent from './components/parentTochild/parent'
+import Parents from './components/childToParent/parent'
 import React, { useState } from "react";
 
 function Finaltodo() {
@@ -45,6 +47,8 @@ function Finaltodo() {
           );
         })}
       </ul>
+      <Parent/>
+      <Parents/>
     </div>
   );
 }
