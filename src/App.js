@@ -1,4 +1,6 @@
 import "./styles.css";
+import Parent from './components/parentTochild/parent'
+import Parents from './components/childToParent/parent'
 import React, { useState } from "react";
 
 function Finaltodo() {
@@ -33,7 +35,7 @@ function Finaltodo() {
           value={input}
           onChange={handleChange}
         />
-        <button>Submit</button>
+        <button style={{ marginLeft: "10px" }}>Submit</button>
       </form>
       <ul>
         {todo.map((itemval, ind) => {
@@ -45,6 +47,8 @@ function Finaltodo() {
           );
         })}
       </ul>
+      <Parent/>
+      <Parents/>
     </div>
   );
 }
